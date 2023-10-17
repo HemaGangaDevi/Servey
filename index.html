@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Survey Form</title>
+  <link rel="stylesheet" href="./s1.css">
+</head>
+<body>
+  <div id="div">
+      <h1>Customer Survey Form</h1>
+      <div id="div2">
+  <form id="surveyForm" >
+
+      <table >
+          <tr>
+              <td>
+              <label for="firstName">First Name:</label></td>
+             <td> <input type="text" id="firstName" required></td>
+              <td><label for="lastName">Last Name:</label></td>
+             <td> <input type="text" id="lastName" required></td><br><br>
+          </tr>
+          <tr>
+              <td><label for="dob">Date of Birth:</label></td>
+              <td><input type="date" id="dob" required></td><br><br>
+              </td>
+          </tr>
+          <tr>
+              <td>
+                  <label for="country">Country:</label></td>
+                 <td><select id="country" required>
+                      <option value="">select country</option>
+                      <option value="Australia">Australia</option>
+                      <option value="Canada">Canada</option>
+                      <option value="India">India</option>
+                      <option value="USA">USA</option></td> 
+                  </select><br><br>
+              </td>
+          </tr>
+          <tr>
+              <td> <label>Gender:</label></td>
+              <td><input type="checkbox" id="male" name="gender" value="Male"> Male</td>
+                  <td><input type="checkbox" id="female" name="gender" value="Female"> Female</td>
+                  <td><input type="checkbox" id="other" name="gender" value="Other"> Other</td><br><br>
+          </tr>
+          <tr>
+              <td><label for="profession">Profession:</label></td>
+                <td>  <input type="text" id="profession" required><br><br>
+          </td>
+          </tr>
+          <tr>
+              <td> <label for="email">Email:</label></td>
+              <td><input type="email" id="email" required><br><br></td>
+          </tr>
+          <tr>
+              <td> <label for="mobile">Mobile Number:</label></td>
+              <td><input type="tel" id="mobile" required><br><br></td>
+          </tr>
+          <tr>
+              <td> <button type="button" id="submitBtn">Submit</button></td>
+                 <td> <button type="button" id="resetBtn">Reset</button></td>
+          </tr>
+      </table>
+  </form>
+</div>
+</div>
+
+
+  <div id="popup" style="display:none;">
+      <h2>Survey Form Submission</h2>
+      <p>First Name: <span id="popupFirstName"></span></p>
+      <p>Last Name: <span id="popupLastName"></span></p>
+      <p>Date of Birth: <span id="popupDateofBirth"></span></p>
+      <p>Country: <span id="popupCountry"></span></p>
+      <p>Gender: <span id="popupGender"></span></p>
+      <p>Profession: <span id="popupProfession"></span></p>
+      <p>Email: <span id="popupEmail"></span></p>
+      <p>Mobile Number: <span id="popupMobileNumber"></span></p>
+      <button type="button" id="closePopup">Close</button>
+  </div>
+<script src="./s2.js"></script>
+  
+</body>
+</html>
